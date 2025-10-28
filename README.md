@@ -42,7 +42,15 @@ nano ~/scripts/ec2-connect.ps1
 
 ---
 
-## 3. Conteúdo sugerido para `ec2-connect.ps1` (interativo)
+## 3. justar a Política de Execução do PowerShell
+
+Execute o comando abaixo em um terminal PowerShell (como Administrador) para permitir a execução de scripts locais.
+
+```powershell
+Set-ExecutionPolicy RemoteSigned
+```
+
+## 4. Conteúdo sugerido para `ec2-connect.ps1` (interativo)
 
 > **Observação:** este é o script interativo que pede para você colar a chave PEM e o IP.
 
@@ -163,7 +171,7 @@ Write-Host "Processo finalizado."
 
 ---
 
-## 4. Tornar o script executável
+## 5. Tornar o script executável
 
 No terminal, rode:
 
@@ -175,7 +183,7 @@ Isso permite executar o script diretamente com `./ec2-connect.ps1`.
 
 ---
 
-## 5. Executando o script
+## 6. Executando o script
 
 Existem duas formas principais:
 
@@ -201,7 +209,7 @@ cd ~/scripts
 
 ---
 
-## 6. Dicas de segurança
+## 7. Dicas de segurança
 
 * **Nunca** compartilhe sua chave privada.
 * Prefira apagar a chave (respondendo `N` na etapa de limpeza) após o uso, especialmente em máquinas compartilhadas.
