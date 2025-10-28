@@ -42,7 +42,7 @@ nano ~/scripts/ec2-connect.ps1
 
 ---
 
-## 3. justar a Política de Execução do PowerShell
+## 3. Ajustar a Política de Execução do PowerShell
 
 Execute o comando abaixo em um terminal PowerShell (como Administrador) para permitir a execução de scripts locais.
 
@@ -171,19 +171,11 @@ Write-Host "Processo finalizado."
 
 ---
 
-## 5. Tornar o script executável
-
-No terminal, rode:
-
-```bash
-Set-ExecutionPolicy RemoteSigned
-```
-
 Isso permite executar o script diretamente com `./ec2-connect.ps1`.
 
 ---
 
-## 6. Executando o script
+## 5. Executando o script
 
 Existem duas formas principais:
 
@@ -209,7 +201,7 @@ cd ~/scripts
 
 ---
 
-## 7. Dicas de segurança
+## 6. Dicas de segurança
 
 * **Nunca** compartilhe sua chave privada.
 * Prefira apagar a chave (respondendo `N` na etapa de limpeza) após o uso, especialmente em máquinas compartilhadas.
