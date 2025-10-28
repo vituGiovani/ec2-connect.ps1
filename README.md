@@ -20,18 +20,24 @@ O script automatiza a seguinte sequência de ações que você faria manualmente
 1. Abra o PowerShell (no Windows):
 
 ```powershell
+# Execute o comando abaixo
+Pressione as teclas Windows + X ao mesmo tempo. No menu que aparecer, pressione A
+```
+2. Crie um pasta:
+
+```powershell
 # Cria uma pasta 'scripts' (se ainda não existir)
 mkdir ~/scripts -F
 ```
 
-2. Crie o arquivo do script e cole o conteúdo (exemplo: usando `notepad`):
+3. Crie o arquivo do script e cole o conteúdo (exemplo: usando `notepad`):
 
-```bash
+```powershell
 notepad ~/scripts/ec2-connect.ps1
 # cole o conteúdo do script e salve: Ctrl+S, fechar o Notepad
 ```
 
-Se preferir usar o nano no Windows, instale-o com o comando: winget install GNU.Nano
+4. Sugestão: Se preferir usar o nano no Windows, instale-o com o comando: winget install GNU.Nano
 
 ```bash
 nano ~/scripts/ec2-connect.ps1
